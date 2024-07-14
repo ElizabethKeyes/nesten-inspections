@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0em) {
   #int-hero {
     min-height: 50vh;
-    background: url("/images/hero-image.jpg");
+    background: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 @media only screen and (min-width: 48em) {
   #int-hero {
     font-size: 20px;
-    background: url("/images/hero-image.jpg");
+    background: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
