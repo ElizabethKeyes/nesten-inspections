@@ -52,6 +52,71 @@
     transform: translate(-50%, -50%);
     z-index: -1;
   }
+
+  summary h4 {
+    margin-bottom: 0;
+  }
+
+  details {
+    padding: .5em !important;
+    margin-bottom: .3em;
+    border-radius: .25em;
+    background-color: #43657e;
+    position: relative;
+    z-index: 1;
+  }
+
+  details div {
+    margin-top: .5em;
+    background-color: #d5f3ff;
+    padding: .75em;
+    border-radius: .25em;
+    font-size: 1rem;
+  }
+
+  details ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  details h4 {
+    color: #fff;
+  }
+
+  details:hover {
+    cursor: default;
+  }
+
+  details summary :hover {
+    cursor: pointer;
+  }
+
+  summary {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: "";
+    border-width: 0.4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary);
+    position: absolute;
+    top: .3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: 0.2rem 50%;
+    transition: 0.25s transform ease;
+  }
+
+  details[open]>summary::before {
+    transform: rotate(90deg);
+  }
 }
 
 /* Tablet */
@@ -89,15 +154,53 @@
     margin: auto;
   }
 
+  #form .topper span:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4.16666667em;
+    width: 4.16666667em;
+    background: var(--primary);
+    opacity: .08;
+    top: -1.38888889em;
+    left: -1.38888889em;
+    z-index: -1;
+  }
+
   #form .topper {
-    font-size: 0.7em;
+    font-size: 1.5em;
     line-height: 1.35714286;
     color: var(--primary);
     letter-spacing: .06em;
     margin-bottom: 0.42857143em;
     display: block;
-    text-transform: uppercase;
     font-weight: bold;
+    position: relative;
+  }
+
+  .schedule-header:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4.16666667em;
+    width: 4.16666667em;
+    background: var(--primary);
+    opacity: .08;
+    top: -1.38888889em;
+    left: -1.38888889em;
+    z-index: -1;
+  }
+
+  .schedule-header {
+    font-size: 1.5em;
+    line-height: 1.35714286;
+    color: var(--primary) !important;
+    letter-spacing: .06em;
+    margin-bottom: 0.42857143em;
+    margin-top: 2em;
+    display: block;
+    font-weight: bold;
+    position: relative;
   }
 
   #form h2 {

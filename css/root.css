@@ -13,6 +13,12 @@
   top: -20em;
 }
 
+#contact-anchor {
+  visibility: hidden;
+  position: relative;
+  top: -7em;
+}
+
 .company-name {
   color: #fff !important;
   margin-bottom: 0;
@@ -776,6 +782,11 @@
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
+  }
+
+  footer h3 {
+    color: #fff !important;
+    text-align: start;
   }
 
   .side-nav a#active-menu:before {
