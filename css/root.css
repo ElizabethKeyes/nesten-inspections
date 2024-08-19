@@ -839,6 +839,12 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+
+  footer h3 {
+    color: #fff !important;
+    text-align: center;
+  }
+
   .company-name {
     visibility: hidden !important;
   }
@@ -961,6 +967,10 @@
 @media only screen and (min-width: 64em) {
   .company-name {
     visibility: visible !important;
+  }
+
+  footer h3 {
+    text-align: start;
   }
 
   #footer {
