@@ -2,10 +2,10 @@
 <---         CORE STYLES        -->
 <--- -------------------------- -*/
 
-/* .veteran-owned {
+.veteran-owned {
   max-height: 10vh;
   margin-top: 1em;
-} */
+}
 
 #services-anchor {
   visibility: hidden;
@@ -473,9 +473,13 @@
   }
 
   /* Navigation Links */
-  .mobile-wrapper img {
+  .mobile-wrapper a {
     height: 85%;
     margin-top: 0.25em;
+  }
+
+  .mobile-wrapper img {
+    height: 100%;
   }
 
   .navbar-menu {
@@ -851,18 +855,20 @@
 
   #footer {
     background: #3A3A3C;
-    padding: 3.1em 0 3.8em;
+    padding: 1.5em 0 1.8em;
     font-size: min(4vw, 1.2em);
   }
 
   #footer .left-section {
     margin: auto;
     margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #footer .left-section .logo {
     display: block;
-    margin: auto;
     width: 14.65em;
     height: auto;
     margin-bottom: 1.5em;

@@ -68,10 +68,17 @@
 
   details div {
     margin-top: .5em;
-    background-color: #d5f3ff;
+    background-color: var(--primary);
     padding: .75em;
     border-radius: .25em;
     font-size: 1rem;
+    color: #43657e;
+    font-weight: bold;
+  }
+
+  details li {
+    color: #43657e;
+    font-weight: bold;
   }
 
   details ul {
@@ -261,6 +268,12 @@
 
   #form #contact .button-solid {
     border: none;
+  }
+
+  .button-solid {
+    width: 100%;
+    margin-top: 1em;
+    background-color: #43657e;
   }
 
   #form .contact-right {
